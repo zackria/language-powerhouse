@@ -14,32 +14,12 @@
     'include': '#comments-line'
   }
   {
-        # http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
-        'match': '''(?x)\\b(?<!\\$)
-                    (abstract|assert|boolean|break|byte|case|catch|char|class|
-                    const|continue|default|do|double|else|enum|extends|final|
-                    finally|float|for|goto|if|implements|import|instanceof|int|
-                    interface|long|native|new|non-sealed|package|permits|private|protected|public|
-                    return|sealed|short|static|strictfp|super|switch|syncronized|this|
-                    throw|throws|transient|try|void|volatile|while|yield|
-                    true|false|null)\\b
-                  '''
-        'name': 'invalid.illegal.character_not_allowed_here.java'
+        # keywords
+        'match': ''
+        'name': 'invalid.illegal.character_not_allowed_here.powerhouse'
       }
 ]
 'repository':
-  'type':
-    'patterns' : [
-      {
-        'begin': '\\b(type)\\s+([A-Za-z0-9_]+)\\b'
-        'end': '='
-        'beginCaptures':
-          '1':
-            'name': 'keyword.other.powerhouse'
-          '2':
-            'name': 'entity.name.type.powerhouse'
-      }
-    ]
   'comments':
     'patterns': [
       {

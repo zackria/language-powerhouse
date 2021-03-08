@@ -8,6 +8,8 @@ Provides support for syntax coloring in the Atom text editor.
 
 `apm publish version-type`
 
+`apm publish --tag v0.0.1 minor`
+
 :note: `version-type can be major, minor and patch.`
 
 
