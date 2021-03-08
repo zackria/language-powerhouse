@@ -8,38 +8,24 @@
 ]
 'patterns': [
   {
-    'include': '#line-comments'
-  }
-  {
     'include': '#comments'
   }
   {
-    'include': '#inlinecpp'
+    'include': '#comments-line'
   }
   {
-    'include': '#module'
-  }
-  {
-    'include': '#open'
-  }
-  {
-    'include': '#type'
-  }
-  {
-    'include': '#function'
-  }
-  {
-    'include': '#keywords'
-  }
-  {
-    'include': '#number'
-  }
-  {
-    'include': '#builtintypes'
-  }
-  {
-    'include': '#include'
-  }
+        # http://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+        'match': '''(?x)\\b(?<!\\$)
+                    (abstract|assert|boolean|break|byte|case|catch|char|class|
+                    const|continue|default|do|double|else|enum|extends|final|
+                    finally|float|for|goto|if|implements|import|instanceof|int|
+                    interface|long|native|new|non-sealed|package|permits|private|protected|public|
+                    return|sealed|short|static|strictfp|super|switch|syncronized|this|
+                    throw|throws|transient|try|void|volatile|while|yield|
+                    true|false|null)\\b
+                  '''
+        'name': 'invalid.illegal.character_not_allowed_here.java'
+      }
 ]
 'repository':
   'type':
@@ -49,152 +35,24 @@
         'end': '='
         'beginCaptures':
           '1':
-            'name': 'keyword.other.juniper'
+            'name': 'keyword.other.powerhouse'
           '2':
-            'name': 'entity.name.type.juniper'
-      }
-    ]
-  'line-comments':
-    'patterns': [
-      {
-        'match': '//.*$'
-        'name': 'comment.line.double-slash.juniper'
+            'name': 'entity.name.type.powerhouse'
       }
     ]
   'comments':
     'patterns': [
       {
-        'begin': '\\(\\*'
-        'end': '\\*\\)'
-        'name': 'comment.block.juniper'
+        'begin': '\\;'
+        'end': '\\'
+        'name': 'comment.line.powerhouse'
       }
     ]
-  'module':
-    'patterns' : [
-      {
-        'match': '\\b(module)\\s+\\b([A-Za-z0-9_]+)$'
-        'captures':
-          '1':
-            'name': 'keyword.other.module-definition.juniper'
-          '2':
-            'name': 'entity.name.section'
-      }
-    ]
-  'open':
-    'patterns' : [
-      {
-        'begin': '\\b(open)\\s*\\('
-        'end': '\\)'
-        'beginCaptures':
-          '1':
-            'name': 'keyword.other.juniper'
-        'patterns': [
-          {
-            'include': '#comments'
-          }
-          {
-            'include': '#line-comments'
-          }
-          {
-            'match': '\\s*,\\s*'
-          }
-          {
-            'match': '\\b[A-Za-z0-9_]+\\b'
-            'name': 'entity.name.section.juniper'
-          }
-        ]
-      }
-    ]
-  'include':
-    'patterns' : [
-      {
-        'begin': '\\b(include)\\s*\\('
-        'end': '\\)'
-        'beginCaptures':
-          '1':
-            'name': 'keyword.other.juniper'
-        'patterns': [
-          {
-            'match': '".*?[^\\\\]"'
-            'name': 'string.quoted.double'
-          }
-          {
-            'include': '#comments'
-          }
-          {
-            'include': '#line-comments'
-          }
-          {
-            'match': '\\s*,\\s*'
-          }
-        ]
-      }
-    ]
-  'function':
-    'patterns': [
-      {
-        'begin': '\\b(fun)\\s+([A-Za-z0-9_]+)\\b'
-        'end': '='
-        'beginCaptures':
-          '1':
-            'name': 'keyword.other.juniper'
-          '2':
-            'name': 'entity.name.function.juniper'
-        'patterns': [
-          {
-            'include': '#comments'
-          }
-          {
-            'include': '#line-comments'
-          }
-          {
-            'include': '#builtintypes'
-          }
-        ]
-      }
-    ]
-  'keywords':
-    'patterns': [
-      {
-        'match': '\\b(->|=>|fn|if|then|in|else|elif|let|set|ref|of|do|for|case|while|to|downto|end|array|mutable|\\(\\))\\b'
-        'name': 'keyword.other.juniper'
-      }
-      {
-        'match': '\\b(!=|==|and|or|not|~~~|\\|\\|\\||&&&|<|>|<=|>=|mod|\\+|-|\\*|\\/|!|<<<|>>>)\\b'
-        'name': 'keyword.operator.juniper'
-      }
-      {
-        'match': '\\b(true|false)\\b'
-        'name': 'constant.language.juniper'
-      }
-    ]
-  'builtintypes':
-    'patterns': [
-      {
-        'match': '\\b(uint8|int8|uint16|int16|uint32|int32|uint64|int64|unit|double|float)\\b'
-        'name': 'storage.type.juniper'
-      }
-    ]
-  'inlinecpp':
-    'patterns': [
-      {
-        'begin': '#'
-        'end': '#'
-        'patterns': [
-          {
-            'include': 'source.cpp'
-          }
-        ]
-      }
-    ]
-  'number':
-    'patterns':[
-      {
-        'match': '\\b-?[0-9]+\\b'
-        'name': 'constant.numeric.juniper'
-      }
-      {
-        'match': '\\b-?[0-9]+\.[0-9]+\\b'
-        'name': 'constant.numeric.juniper'
-      }
-    ]
+    'comments-line':
+      'patterns': [
+        {
+          'begin': '\\REM'
+          'end': '\\'
+          'name': 'comment.line2.powerhouse'
+        }
+      ]

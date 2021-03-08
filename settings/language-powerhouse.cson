@@ -3,5 +3,5 @@
 
 '.source.powerhouse':
   'editor':
-    'commentStart': '(*'
-    'commentEnd': '*)'
+    'commentStart': ';'
+    'commentEnd': ''
