@@ -1,0 +1,23 @@
+{
+  "name": "language-powerhouse",
+  "version": "2.2.0",
+  "description": "A package for the PowerHouse® 4GL programming language",
+  "keywords": [
+    "language",
+    "grammar"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zackria/language-powerhouse.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": "*"
+  },
+  "readme": "# PowerHouse® 4GL language package\n\nProvides support for syntax coloring in the Atom text editor.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/zackria/language-powerhouse/issues"
+  },
+  "homepage": "https://github.com/zackria/language-powerhouse#readme"
+}
