@@ -1,6 +1,12 @@
 # If you want some example snippets, check out:
 # https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
 '*':
+  'Procedure Designer':
+      'prefix': 'ACL'
+      'body': 'ACTIONMENU LABEL'
+  'Procedure DESCRIPTION OF SCREEN'
+      'prefix':'DOS'
+      'body': 'DESCRIPTION OF SCREEN'
   'Prodcedure Designer':
     'prefix': 'PD'
-    'body': 'PROCEDURE DESIGNER'
+    'body': 'PROCEDURE DESIGNER' 
