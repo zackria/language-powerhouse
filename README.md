@@ -25,19 +25,24 @@ Provides support for syntax coloring in the Atom text editor.
 
 [atom-language-powerhouse](https://atom.io/packages/search?q=language-powerhouse)
 
-├── CHANGELOG.md
-├── LICENSE.md
-├── README.md
-├── keymaps
-│   └── my-package.json         <- Key shortcuts registered by your package
-├── lib
-│   ├── my-package-view.js
-│   └── my-package.js           <- Entry point of your package
-├── menus
-│   └── my-package.json         <- Menus declaration of your package into Atom application
-├── package.json                <- Description and library dependencies of your package
-├── spec                        <- Tests directory (Jasmine) of your package
-│   ├── my-package-spec.js
-│   └── my-package-view-spec.js
-└── styles                      <- Stylesheets used by your package
-└── my-package.less
+#### Package Location
+##### Windows `C:\Users\%username%\.atom\packages`
+##### MacOS `/Users/$USER/.atom/packages`
+
+
+###### CHANGELOG.md
+###### LICENSE.md
+###### README.md
+###### keymaps
+###### my-package.json         <- Key shortcuts registered by your package
+###### lib
+######  my-package-view.js
+######  my-package.js           <- Entry point of your package
+###### menus
+######  my-package.json         <- Menus declaration of your package into Atom ###### application
+######  package.json                <- Description and library dependencies of ###### Your package
+###### spec                        <- Tests directory (Jasmine) of your package
+######  my-package-spec.js
+######  my-package-view-spec.js
+###### styles                      <- Stylesheets used by your package
+###### my-package.less
