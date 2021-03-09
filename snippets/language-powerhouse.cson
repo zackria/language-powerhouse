@@ -1,6 +1,6 @@
 # If you want some example snippets, check out:
 # https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
-'*':
+'.source.qts, .source.qks, .source.qzs':
   'ACTIONMENU LABEL':
       'prefix': 'ACL'
       'body': 'ACTIONMENU LABEL'
