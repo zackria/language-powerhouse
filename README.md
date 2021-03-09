@@ -12,6 +12,13 @@ Provides support for syntax coloring in the Atom text editor.
 
 :note: `version-type can be major, minor and patch.`
 
+## First Time Publishing
+
+`git checkout -b master`
+
+`git push -u origin master`
+
+`apm publish minor`
 
 ├── CHANGELOG.md
 ├── LICENSE.md
