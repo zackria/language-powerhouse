@@ -1,9 +1,34 @@
 # PowerHouse® 4GL language package
 
-Provides support for syntax coloring in the Atom text editor.
+Provides support for syntax colouring in the Atom text editor.
 
+----
+## **Whats new**
+* language-powerhouse first version published
+* custom styles added
+----
 
-# Publish the package
+#### GITHub Location
+[atom-language-powerhouse](https://atom.io/packages/search?q=language-powerhouse)
+
+#### Package Location
+##### Windows `C:\Users\%username%\.atom\packages`
+##### MacOS `/Users/$USER/.atom/packages`
+
+----
+
+### I'd like to support this project
+
+#### Help us bring this project to the moon! Atom's rocket needs to get somewhere, right?
+
+*  **Contribute!** I'll be happy to accept pull requests!
+*  **Bug hunting!** [Report](https://github.com/zackria/language-powerhouse/issues) them!
+* **Feature request?** Please let me know by filling an [issue](https://github.com/zackria/language-powerhouse/issues)!
+* **Star this project** on [Atom](https://atom.io/packages/language-powerhouse), [Github](https://github.com/zackria/language-powerhouse)
+
+---
+
+### Publishing the package (Instruction)
 `apm publish minor`
 
 `apm publish version-type`
@@ -12,7 +37,7 @@ Provides support for syntax coloring in the Atom text editor.
 
 :note: `version-type can be major, minor and patch.`
 
-## First Time Publishing
+### First Time Publishing
 
 `git checkout -b master`
 
@@ -21,28 +46,6 @@ Provides support for syntax coloring in the Atom text editor.
 `apm publish minor`
 
 #### Reference
-[language-scilab](https://github.com/JeremyHeleine/language-scilab/)
-
-[atom-language-powerhouse](https://atom.io/packages/search?q=language-powerhouse)
-
-#### Package Location
-##### Windows `C:\Users\%username%\.atom\packages`
-##### MacOS `/Users/$USER/.atom/packages`
-
-
-###### CHANGELOG.md
-###### LICENSE.md
-###### README.md
-###### keymaps
-###### my-package.json         <- Key shortcuts registered by your package
-###### lib
-######  my-package-view.js
-######  my-package.js           <- Entry point of your package
-###### menus
-######  my-package.json         <- Menus declaration of your package into Atom ###### application
-######  package.json                <- Description and library dependencies of ###### Your package
-###### spec                        <- Tests directory (Jasmine) of your package
-######  my-package-spec.js
-######  my-package-view-spec.js
-###### styles                      <- Stylesheets used by your package
-###### my-package.less
+* [language-scilab](https://github.com/JeremyHeleine/language-scilab/)
+* [markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+* [Regular Expression Tester](https://regex101.com/)
