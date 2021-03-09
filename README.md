@@ -3,8 +3,8 @@
 Provides support for syntax colouring in the Atom text editor.
 
 ----
-## **Whats new**
-* language-powerhouse first version published
+## **Whats new** :new:
+* language-powerhouse first version published :tada:
 * custom styles added
 ----
 
@@ -35,7 +35,7 @@ Provides support for syntax colouring in the Atom text editor.
 
 `apm publish --tag v0.0.1 minor`
 
-:note: `version-type can be major, minor and patch.`
+:pencil: `version-type can be major, minor and patch.`
 
 ### First Time Publishing
 
