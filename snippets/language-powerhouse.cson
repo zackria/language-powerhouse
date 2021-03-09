@@ -1,6 +1,16 @@
 # If you want some example snippets, check out:
 # https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
 '.source.qts':
-  'console.log':
-    'prefix': 'log'
-    'body': 'console.log(${1:"crash"});$2'
+  'Prodcedure Designer':
+    'prefix': 'PD'
+    'body': 'PROCEDURE DESIGNER$1'
+
+'.source.qzs':
+  'Prodcedure Designer':
+    'prefix': 'PD'
+    'body': 'PROCEDURE DESIGNER$1'
+
+'.source.qks':
+  'Prodcedure Designer':
+    'prefix': 'PD'
+    'body': 'PROCEDURE DESIGNER$1'
