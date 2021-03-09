@@ -4,9 +4,9 @@
   'Procedure Designer':
       'prefix': 'ACL'
       'body': 'ACTIONMENU LABEL'
-  'Procedure DESCRIPTION OF SCREEN'
-      'prefix':'DOS'
+  'DESCRIPTION OF SCREEN':
+      'prefix': 'DOS'
       'body': 'DESCRIPTION OF SCREEN'
-  'Prodcedure Designer':
-    'prefix': 'PD'
-    'body': 'PROCEDURE DESIGNER' 
+  'ACTIONMENU LABEL':
+      'prefix': 'ACL'
+      'body': 'ACTIONMENU LABEL'
