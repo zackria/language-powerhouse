@@ -20,6 +20,9 @@ Provides support for syntax coloring in the Atom text editor.
 
 `apm publish minor`
 
+#### Reference
+[language-scilab](https://github.com/JeremyHeleine/language-scilab/)
+
 ├── CHANGELOG.md
 ├── LICENSE.md
 ├── README.md
