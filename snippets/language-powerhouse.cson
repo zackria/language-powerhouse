@@ -1,12 +1,27 @@
 # If you want some example snippets, check out:
 # https://github.com/atom/language-gfm/blob/master/snippets/gfm.cson
 '*':
-  'Procedure Designer':
+  'ACTIONMENU LABEL':
       'prefix': 'ACL'
       'body': 'ACTIONMENU LABEL'
   'DESCRIPTION OF SCREEN':
       'prefix': 'DOS'
       'body': 'DESCRIPTION OF SCREEN'
-  'ACTIONMENU LABEL':
-      'prefix': 'ACL'
-      'body': 'ACTIONMENU LABEL'
+  'GLOBAL TEMPORARY':
+      'prefix': 'GT'
+      'body': 'GLOBAL TEMPORARY'
+  'ACTION DESIGNER NAME':
+      'prefix': 'ADN'
+      'body': 'ACTION DESIGNER NAME'
+  'SET REPORT DEVICE PRINTER':
+      'prefix': 'SRDP'
+      'body': 'SET REPORT DEVICE PRINTER'
+  'SORT ON NAME OF':
+      'prefix': 'SONO'
+      'body': 'SORT ON NAME OF'
+  'ON NAME OF':
+      'prefix': 'ONO'
+      'body': 'ON NAME OF'
+  'SET REPORT NOLIMIT':
+      'prefix': 'SRN'
+      'body': 'SET REPORT NOLIMIT'
