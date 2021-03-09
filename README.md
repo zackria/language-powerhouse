@@ -23,6 +23,8 @@ Provides support for syntax coloring in the Atom text editor.
 #### Reference
 [language-scilab](https://github.com/JeremyHeleine/language-scilab/)
 
+[atom-language-powerhouse](https://atom.io/packages/search?q=language-powerhouse)
+
 ├── CHANGELOG.md
 ├── LICENSE.md
 ├── README.md

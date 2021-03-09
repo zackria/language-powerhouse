@@ -32,6 +32,9 @@
   {
       'include': '#functionsu'
   }
+  {
+        'include': '#custom'
+  }
 ]
 
 'repository':
@@ -84,7 +87,7 @@
           'patterns': [
             {
             match: '[$&*(),.:{}\\[|\\]=+-<>]'
-            'name': 'storage.type.powerhouse'
+            'name': 'style1.powerhouse'
             }
           ]
      'strings':
@@ -114,3 +117,10 @@
         'name': 'constant.numeric.powerhouse'
         }
       ]
+    'custom':
+        'patterns': [
+          {
+          match: '\\b((?i)(PORTFOLIOS|CLIENTS))\\b'
+          'name': 'style2.powerhouse'
+          }
+        ]
