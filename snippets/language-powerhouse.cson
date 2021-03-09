@@ -3,14 +3,14 @@
 '.source.qts':
   'Prodcedure Designer':
     'prefix': 'PD'
-    'body': 'PROCEDURE DESIGNER$1'
+    'body': 'PROCEDURE DESIGNER'
 
 '.source.qzs':
   'Prodcedure Designer':
     'prefix': 'PD'
-    'body': 'PROCEDURE DESIGNER$1'
+    'body': 'PROCEDURE DESIGNER'
 
 '.source.qks':
   'Prodcedure Designer':
     'prefix': 'PD'
-    'body': 'PROCEDURE DESIGNER$1'
+    'body': 'PROCEDURE DESIGNER'
