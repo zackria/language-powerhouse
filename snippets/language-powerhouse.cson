@@ -13,6 +13,9 @@
   'ACTION DESIGNER NAME':
       'prefix': 'ADN'
       'body': 'ACTION DESIGNER NAME'
+  'ACTION DESIGNER':
+      'prefix': 'AD'
+      'body': 'ACTION DESIGNER'
   'SET REPORT DEVICE PRINTER':
       'prefix': 'SRDP'
       'body': 'SET REPORT DEVICE PRINTER'
