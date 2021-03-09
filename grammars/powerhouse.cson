@@ -3,9 +3,7 @@
 
 'scopeName': 'source.powerhouse'
 'name': 'Powerhouse'
-'fileTypes': [
-  'qts', 'qks', 'qzs'
-]
+'fileTypes': ['qts', 'qks', 'qzs']
 'patterns': [
   {
     'include': '#comments'
@@ -14,25 +12,43 @@
     'include': '#comments-line'
   }
   {
-        # keywords
-        'match': ''
-        'name': 'invalid.illegal.character_not_allowed_here.powerhouse'
-      }
+    'include': '#keywords'
+  }
+  {
+      'include': '#keywordsu'
+  }
 ]
+
 'repository':
   'comments':
     'patterns': [
       {
         'begin': '\\;'
-        'end': '\\'
+        'end': '\\n'
         'name': 'comment.line.powerhouse'
       }
     ]
+
     'comments-line':
       'patterns': [
         {
           'begin': '\\REM'
-          'end': '\\'
+          'end': '\\n'
           'name': 'comment.line2.powerhouse'
         }
       ]
+  'keywords':
+      'patterns': [
+        {
+        match: '\\b((?i)(CHA|CHAR|CHARACTER|FLO|INT|INTEGER|NUM|NUMBER|IBASEDATE|DATETIME|acc|access|accessok|act|action|activ|activity|add|actionmenu|align|all|and|app|at|ali|alias|app|append|as|autocomm|autocommit|beg|begin|break|bui|build|bwz|can|cancel|cap|case|chan|change|cho|choo|choose|cle|clear|clus|cluster|comm|command|commit|concurrency|cont|continue|cur|cursor|declare|def|define|del|delete|des|design|designer|description|dev|device|dis|disc|disp|display|do|draw|dup|duplicate|else|end|entry|err|error|exit|exist|exists|fie|field|fil|file|fin|find|for|formfeed|from|gen|generate|get|glo|global|go|hea|head|hel|help|hilite|id|if|in|info|ini|inp|input|int|internal|inv|inverse|ite|item|keep|key|lab|label|lea|let|link|lim|limit|lock|lookup|mas|master|menuitem|mes|mess|mode|model|name|nocha|nochan|nochange|nodet|noformf|noformfeed|noid|noite|noitem|nol|nolab|nolabel|nolim|nolimit|nomode|not|now|of|on|opt|option|optional|or|orderby|out|page|paint|param|paramet|pass|passing|pic|picture|pop|popup|pri|primary|print|printer|pro|proc|procedure|prom|prompt|put|quit|rec|recieve|record|ref|reference|report|rep|report|req|required|request|res|resp|reset|retrie|retriev|return|rev|revise|run|sam|same|save|sca|scale|sec|secundary|seve|severity|scr|screen|sel|select|set|sho|show|sig|sign|signif|significance|ski|skip|sort|sql|sta|star|start|stat|statistic|stop|sub|subfile|subscr|tab|target|tem|temp|temporal|temporary|then|thin|thick|thread|tit|title|to|tra|tran|trans|transaction|upd|update|union|unlock|use|usi|using|val|values|via|warn|warning|when|where|whidth|while))\\b'
+        name: 'keyword.control.powerhouse'
+        }
+      ]
+
+      'keywordsu':
+          'patterns': [
+            {
+            match: '\\b((?i)(CHA|CHAR|CHARACTER|FLO|INT|INTEGER|NUM|NUMBER|IBASEDATE|DATETIME|ACC|ACCESS|ACCESSOK|ACT|ACTION|ACTIV|ACTIVITY|ADD|ACTIONMENU|ALIGN|ALL|AND|APP|AT|ALI|ALIAS|APP|APPEND|AS|AUTOCOMM|AUTOCOMMIT|BEG|BEGIN|BREAK|BUI|BUILD|BWZ|CAN|CANCEL|CAP|CASE|CHAN|CHANGE|CHO|CHOO|CHOOSE|CLE|CLEAR|CLUS|CLUSTER|COMM|COMMAND|COMMIT|CONCURRENCY|CONT|CONTINUE|CUR|CURSOR|DECLARE|DEF|DEFINE|DEL|DELETE|DES|DESIGN|DESIGNER|DESCRIPTION|DEV|DEVICE|DIS|DISC|DISP|DISPLAY|DO|DRAW|DUP|DUPLICATE|ELSE|END|ENTRY|ERR|ERROR|EXIT|EXIST|EXISTS|FIE|FIELD|FIL|FILE|FIN|FIND|FOR|FORMFEED|FROM|GEN|GENERATE|GET|GLO|GLOBAL|GO|HEA|HEAD|HEL|HELP|HILITE|ID|IF|IN|INFO|INI|INP|INPUT|INT|INTERNAL|INV|INVERSE|ITE|ITEM|KEEP|KEY|LAB|LABEL|LEA|LET|LINK|LIM|LIMIT|LOCK|LOOKUP|MAS|MASTER|MENUITEM|MES|MESS|MODE|MODEL|NAME|NOCHA|NOCHAN|NOCHANGE|NODET|NOFORMF|NOFORMFEED|NOID|NOITE|NOITEM|NOL|NOLAB|NOLABEL|NOLIM|NOLIMIT|NOMODE|NOT|NOW|OF|ON|OPT|OPTION|OPTIONAL|OR|ORDERBY|OUT|PAGE|PAINT|PARAM|PARAMET|PASS|PASSING|PIC|PICTURE|POP|POPUP|PRI|PRIMARY|PRINT|PRINTER|PRO|PROC|PROCEDURE|PROM|PROMPT|PUT|QUIT|REC|RECIEVE|RECORD|REF|REFERENCE|REPORT|REP|REPORT|REQ|REQUIRED|REQUEST|RES|RESP|RESET|RETRIE|RETRIEV|RETURN|REV|REVISE|RUN|SAM|SAME|SAVE|SCA|SCALE|SEC|SECUNDARY|SEVE|SEVERITY|SCR|SCREEN|SEL|SELECT|SET|SHO|SHOW|SIG|SIGN|SIGNIF|SIGNIFICANCE|SKI|SKIP|SORT|SQL|STA|STAR|START|STAT|STATISTIC|STOP|SUB|SUBFILE|SUBSCR|TAB|TARGET|TEM|TEMP|TEMPORAL|TEMPORARY|THEN|THIN|THICK|THREAD|TIT|TITLE|TO|TRA|TRAN|TRANS|TRANSACTION|UPD|UPDATE|UNION|UNLOCK|USE|USI|USING|VAL|VALUES|VIA|WARN|WARNING|WHEN|WHERE|WHIDTH|WHILe))\\b'
+            name: 'keyword.control.powerhouse'
+            }
+          ]
